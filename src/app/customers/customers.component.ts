@@ -8,10 +8,10 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CustomerListComponent implements OnInit {
   @Input() query?: string; // this will come from the query params
   @Input() id?: string; // this will come from the path params
-  @Input() data!: string; // this will come from the data
+  @Input() title!: string; // this will come from the data
   constructor() {}
 
   ngOnInit() {
-    console.log(this.data);
+    alert(this.query);
   }
 }

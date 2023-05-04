@@ -5,5 +5,5 @@ import { Component, Input } from '@angular/core';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  title = 'Lazy loading feature modules';
+  title = 'Router input binding';
 }
