@@ -6,5 +6,4 @@ import { Component, Input } from '@angular/core';
 })
 export class AppComponent {
   title = 'Lazy loading feature modules';
-  @Input('param') parameter!: string;
 }

@@ -4,14 +4,13 @@ import { CustomerListComponent } from './customers/customers.component';
 
 const routes: Routes = [
   {
-    path: 'customers',
+    path: 'customers/:id',
     component: CustomerListComponent,
-    data: { title: 'This param (customers)come from app-routing' },
+    data: { title: 'This param (data)come from app-routing' },
   },
   {
     path: '',
     redirectTo: '',
-    data: { param: 'This param (pathMatch)come from app-routing' },
     pathMatch: 'full',
   },
 ];

@@ -6,10 +6,12 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./customers.component.css'],
 })
 export class CustomerListComponent implements OnInit {
-  @Input() title!: string;
+  @Input() query?: string; // this will come from the query params
+  @Input() id?: string; // this will come from the path params
+  @Input() data!: string; // this will come from the data
   constructor() {}
 
   ngOnInit() {
-    console.log(this.title);
+    console.log(this.data);
   }
 }
